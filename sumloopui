@@ -1,0 +1,16 @@
+#!bin/bash
+
+echo Hello! What is your name?
+read name;
+echo Hallo, $name. How are you?
+sum=0;
+echo insert n.
+read n;
+i=0;
+while [[ $i -le $n ]]; do
+  sum=$[sum+i];
+  i=$[i+1];
+done
+echo The sum 'is:-'
+echo $sum;
+exit
